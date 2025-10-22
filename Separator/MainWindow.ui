@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1556</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="4">
+      <item>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>日志</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="VpLogWidget" name="textEdit_2">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1556</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="actionSwitchProj"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionVpEdit"/>
+    <addaction name="actionCamera"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>选择工站</string>
+    </property>
+    <addaction name="action1_1_3"/>
+    <addaction name="separator"/>
+    <addaction name="action2_4_6"/>
+    <addaction name="separator"/>
+    <addaction name="action3_7_9"/>
+    <addaction name="separator"/>
+    <addaction name="action4_10_12"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="actionMES"/>
+    <addaction name="action_7"/>
+    <addaction name="action_10"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>通信</string>
+    </property>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVpEdit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Assets/eidt.svg</normaloff>:/Assets/eidt.svg</iconset>
+   </property>
+   <property name="text">
+    <string>视觉编辑</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Assets/save.svg</normaloff>:/Assets/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionSwitchProj">
+   <property name="text">
+    <string>切换</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>板卡编辑</string>
+   </property>
+  </action>
+  <action name="action1_1_3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>1#工站-通道1-3</string>
+   </property>
+  </action>
+  <action name="action2_4_6">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>2#工站-通道4-6</string>
+   </property>
+  </action>
+  <action name="action3_7_9">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>3#工站-通道7-9</string>
+   </property>
+  </action>
+  <action name="action4_10_12">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>4#工站-通道10-12</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>通信设置</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>板卡设置</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>变频器设置</string>
+   </property>
+  </action>
+  <action name="actionMES">
+   <property name="text">
+    <string>通讯设置</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>标定设置</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>清料</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>视觉编辑</string>
+   </property>
+  </action>
+  <action name="actionCamera">
+   <property name="text">
+    <string>相机编辑</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>产品设置</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VpLogWidget</class>
+   <extends>QTextEdit</extends>
+   <header>VpLogWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionVpEdit</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ShowVpEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>724</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ShowVpEdit()</slot>
+ </slots>
+</ui>

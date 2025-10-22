@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Assets">
+        <file alias="vlogo.png">Assets/vlogo.png</file>
+        <file alias="hlogo.png">Assets/hlogo.png</file>
+        <file alias="eidt.svg">Assets/eidt.svg</file>
+        <file alias="save.svg">Assets/save.svg</file>
+    </qresource>
+
+</RCC>
